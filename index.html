@@ -4,253 +4,427 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>THE BAND</title>
-    <link rel="stylesheet" href="./assets/css/styles.css"> 
-    <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
-   
-    
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
- <div id="main">
-    
-    <div id="header">
-        <ul id="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#band">Band</a></li>
-            <li><a href="#tour">Tour</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#">
-                More
-                
-                <i class="menu-down-button ti-angle-down"></i>
-            </a>
-                <ul class="menu1">
-                    <li><a href="">Merchandise</a></li>
-                    <li><a href="">Extras</a></li>
-                    <li><a href="">Media</a></li>
+   <div class="main">
+       <header class="header">
+            <div class="header-nav">
+                <div class="header-icon">
+                    <i id="menu-btn" class="header-nav-icon__mobile fas fa-bars"></i>
+                </div>
+                <ul class="header-nav__list close" id="header-nav__list-mobile">
+                    <li class="header-nav__items">
+                        <a href="#" class="header-nav__link">HOME</a>
+                    </li>
+
+                    <li class="header-nav__items">
+                        <a href="#about-me" class="header-nav__link">ABOUT ME</a>
+                    </li>
+
+
+                    <li class="header-nav__items">
+                        <a href="#contact-me" class="header-nav__link">CONTACT</a>
+                    </li>
+                   
                 </ul>
-            </li>
-        </ul>
-
-        <div class="search-button">
-            <i class=" menu-search-button ti-search"></i>
-        </div>
-    </div>
-    
-    <div id="slider">
-        <div class="text-img">
-            <h2 class="text">Chicago</h2>
-            <div class="text-description">Thank you, Chicago - A night we won't forget.
-
             </div>
-        </div>
-    </div>
+
+            <div class="header-desc">
+                <div class="header-desc__container">
+
+                    <ul class="header-desc__list">
+                        <li class="header-desc__items">
+                            <span data-text="Welcome to my website">Welcome to my website</span>
+                         </li>
+
+                         <li class="header-desc__items">
+                            <span data-text="My name is Hoang Nam">My name is Hoang Nam</span>
+                         </li>
+
+                         <li class="header-desc__items">
+                            <span data-text="I'm a Frontend developer">I'm a Frontend developer</span>
+                         </li>
+
+                    </ul>
     
-    <div id="content">
-
-        <div id="band" class="content-sections">
-
-            <h3 class="section-heading">THE BAND</h3>
-            <p class="section-slogen">We love music</p>
-            <p class="about-text">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <div  class="row theme">
-                
-                <div class="col col-third member-item text-center"> 
-                    <p class="member-name">Name</p>
-                    <img src="./assets/img/bandtheme/bandmember.jpg" alt="Name" class="avatar">
                 </div>
+            </div>
+        </header>
+    
+        <div class="body">
+            <button onclick="topFunction()" id="myBtn" title="Go to top">
+                <i class="fas fa-chevron-up"></i>
+            </button>
+
+            <div id="about-me">
+                <div class="container-about-me">
+                    <div class="container-desc__box">
+                        <div class="container-desc__box-wrap grid wide">
+                            <div class="container-desc__top">
+                                <i class="container-desc__top-icon fas fa-portrait"></i>
+                                <span class="container-desc__top-slash">/</span>
+                                <span class="container-desc__top-text">ABOUT ME</span>
+                            </div>
+                            <div class="container-desc__bottom">
+                                <span class="container-desc__bottom-text">
+                                    " Nothing is impossible "
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="container-about-me__main grid wide">
+                        <div class="about-me__info grid wide">
+                            <h3 class="about-me__info-name">
+                                MY FULLNAME IS VO HOANG NAM
+                            </h3>
+                            <p class="about-me-info__desc">
+                                I'm a Frontend Developer
+                            </p>
+    
+                            <div class="about-me__profile">
+                                <div class="profile-avatar">
+    
+                                    <img src="./assets/img/profile avatar.jpg" alt="" class="profile-avatar__img">
+                                    
+                                </div>
+    
+                                <div class="profile-social">
+    
+                                    <div class="profile-social__text">
+                                        <p class="profile-social__text-content">Follow Me On</p>
+                                    </div>
+    
+                                    <a href="https://www.facebook.com/h.nam30/" class="profile-social__link">
+                                        <i class="profile-social__icon fab fa-facebook"></i>
+                                    </a>
+                                    
+                                    <i class="profile-social__icon fab fa-twitter"></i>
+                                    
+                                </div>
+    
+                                <div class="separate">
+                                    <i class="separate-icon fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="about-me__info grid wide">
+                            <h3 class="about-me__info-name">
+                                MAIN SKILLS
+                            </h3>
+                        
+                           <div class="row sm-gutters about-me__main-skills">
+                               <div class="col l-6 m-12 c-12">
+                                  <div class="main-skills__charts">
+                                      <div class="main-skills__charts-container">
+                                        <p class="main-skills__charts-title">HTML / CSS</p>
+                                        <div class="main-skills__charts-box">
+                                            <div class="main-skills__charts-percent">
+                                                <span class="main-skills__charts-percent-value">60%</span>
+                                            </div>
+                                        </div>
+    
+                                      </div>
+                                      
+                                  </div>
+    
+                                  <div class="main-skills__charts">
+                                    <div class="main-skills__charts-container">
+                                      <p class="main-skills__charts-title main-skills__charts-title-space">JAVASCRIPT</p>
+                                      <div class="main-skills__charts-box main-skills__charts-box1">
+                                          <div class="main-skills__charts-percent main-skills__charts-percent1">
+                                              <span class="main-skills__charts-percent-value">50%</span>
+                                          </div>
+                                      </div>
+    
+                                    </div>
+                                    
+                                </div>
+                               </div>
+    
+                                <div class="col l-6 m-12 c-12">
+                                    <div class="main-skills__desc">
+                                        <h3 class="main-skills__desc-header">
+                                            Get To Now Me
+                                        </h3>
+    
+                                        <span class="main-skills__desc-contain">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur commodo consequat eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        </span>
+                                    </div>
+                                </div>
+    
+                                
+                           </div>
+    
+                            <div class="separate">
+                                <i class="separate-icon fas fa-star"></i>
+                            </div>
+    
+    
+                            <div class="contact grid wide">
+                                <div class="about-me__info grid wide">
+                                    <h3 class="about-me__info-name">
+                                        MY CONTACT INFORMATION
+                                    </h3>
+                               
+                                </div>
+                                <div class="contact-contain">
+                                    <div class="contact-box">
+                                        <div class="contact-address">
+                                            <i class="contact-address__icon fas fas fa-compass"></i>
+                                            <p class="contact-address__contain">The Company Name Inc.1234 Street Road,City Name,IN 567 890.</p>
+                                        </div>
+    
+                                        <div class="contact-info">
+                                            <ul class="contact-info__list">
+                                                <li class="contact-item__items">
+                                                    <span class="contact-item__items-desc">Email : hoangnammessi12@gmail.com</span>
+                                                    <i class="contact-item__items-icon fas fa-envelope"></i>
+                                                </li>
+    
+                                                <li class="contact-item__items">
+                                                    <span class="contact-item__items-desc">Tel : 0867744750</span>
+                                                    <i class="contact-item__items-icon fas fa-phone-square-alt"></i>
+                                                </li>
+    
+                                                <li class="contact-item__items">
+                                                    <span class="contact-item__items-desc">WebSite : www.yoursite.com</span>
+                                                    <i class="contact-item__items-icon fas fa-link"></i>
+                                                </li>
+                                               
+                                            </ul>
+                                        </div>
+                                    </div>
+    
+                                
                 
-                <div class="col col-third member-item text-center">
-                    <p class="member-name">Name</p>
-                    <img src="./assets/img/bandtheme/bandmember.jpg" alt="Name" class="avatar">
+                                </div>
+                                
+                            </div>
+    
+                            <div class="separate">
+                                <i class="separate-icon fas fa-star"></i>
+                            </div>
+    
+                            <div class="resume grid wide">
+                                <div class="about-me__info grid wide">
+                                    <h3 class="about-me__info-name">
+                                        MY EDUCATION
+                                    </h3>
+                                </div>
+    
+                                <div class="row sm-gutters education">
+                                    <div class="col l-4 l-o-1 m-12">
+                                        <div class="education-contain">
+                                            <div class="education-contain__icon">
+                                                <i class="education-contain__icon-img fas fa-user-graduate"></i>
+                                            </div>
+    
+                                            <div class="education-contain__text">
+                                                <h3 class="education-contain__text-header">Master Degree - Mutation Media</h3>
+                                                <p class="education-contain__year">2005-2013</p>
+                                                <p class="education-contain__desc">
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="col l-4 l-o-2 m-12">
+                                        <div class="education-contain">
+                                            <div class="education-contain__icon">
+                                                <i class="education-contain__icon-img fas fa-user-graduate"></i>
+                                            </div>
+    
+                                            <div class="education-contain__text">
+                                                <h3 class="education-contain__text-header">Master Degree - Mutation Media</h3>
+                                                <p class="education-contain__year">2005-2013</p>
+                                                <p class="education-contain__desc">
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="col l-4 l-o-1 m-12">
+                                        <div class="education-contain">
+                                            <div class="education-contain__icon">
+                                                <i class="education-contain__icon-img fas fa-user-graduate"></i>
+                                            </div>
+    
+                                            <div class="education-contain__text">
+                                                <h3 class="education-contain__text-header">Master Degree - Mutation Media</h3>
+                                                <p class="education-contain__year">2005-2013</p>
+                                                <p class="education-contain__desc">
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="col l-4 l-o-2 m-12">
+                                        <div class="education-contain">
+                                            <div class="education-contain__icon">
+                                                <i class="education-contain__icon-img fas fa-user-graduate"></i>
+                                            </div>
+    
+                                            <div class="education-contain__text">
+                                                <h3 class="education-contain__text-header">Master Degree - Mutation Media</h3>
+                                                <p class="education-contain__year">2005-2013</p>
+                                                <p class="education-contain__desc">
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+    
+    
+                                    
+                                </div>
+                               
+                            </div>
+    
+                            <div class="separate">
+                                <i class="separate-icon fas fa-star"></i>
+                            </div>
+    
+                           
+    
+                        </div>
+                    </div>
                 </div>
+    
+            </div>
+
+
+          <div id="contact-me">
+            <div class="contact">
+                <div class="container-desc__box container-desc__box1">
+                    <div class="container-desc__box-wrap grid wide">
+                        <div class="container-desc__top">
+                            <i class="container-desc__top-icon fas fa-envelope"></i>
+                            <span class="container-desc__top-slash">/</span>
+                            <span class="container-desc__top-text">CONTACT</span>
+                        </div>
+                        <div class="container-desc__bottom">
+                            <span class="container-desc__bottom-text">
+                                " Be where your feet are "
+                            </span>
+                        </div>
+                    </div>
+                </div>
+    
                 
-                <div class="col col-third member-item text-center">
-                    <p class="member-name">Name</p>
-                    <img src="./assets/img/bandtheme/bandmember.jpg" alt="Name" class="avatar">
+                <div class="contact-contain grid wide">
+                    <div class="about-me__info grid wide">
+                        <h3 class="about-me__info-name">
+                            GET IN TOUCH WITH ME
+                        </h3>
+                    </div>
+    
+                    <div class="contact-input grid wide">
+                        <div class="row sm-gutters contact-input__box">
+                            <div class="col l-3 l-o-2 c-12 col--margin">
+                                <p class="contact-desc">Name *</p>
+                                <input type="name" class="contact-input__contain">
+                            </div>
+    
+                            <div class="col l-3 c-12 col--margin">
+                                <p class="contact-desc">Email *</p>
+                                <input type="email" class="contact-input__contain">
+                            </div>
+    
+                            <div class="col l-3 c-12 col--margin">
+                                <p class="contact-desc">Subject</p>
+                                <input type="text" class="contact-input__contain">
+                            </div>
+    
+                        </div>
+                        <div class="row contact-input__box">
+                            <div class="col l-9 l-o-2 m-12 c-12 col--margin">
+                                <p class="contact-desc">Message *</p>
+                                <textarea type="message" class="contact-input__contain contact-input__contain1"></textarea>
+                                <input type="submit" class="contact-submit" value="SEND MESSAGE" name="submit">
+                            </div>
+    
+                        </div>
+                        
+                    </div>
+                </div>
+               </div>
                
-                </div>
-              
-            </div>
-
-        </div>
-
-        <div class="tour-section">
-            <div id="tour" class="content-sections">
-                <h3 class="section-heading text-white">TOUR DATES</h3>
-                <p class="section-slogen text-white">Remember to book your tickets!</p>
-                <ul class="ticket-list" >
-                    <li class="ticket-date" >September <span class="sold-out">Sold out</span></li>
-                    <li class="ticket-date">October <span class="sold-out">Sold out </span></li>
-                    <li class="ticket-date">November <span class="Quantity">3</span></li>
-                </ul>
-            
-                
-                <div class="row place-list">
-                    <div class="col col-third">
-                        <img src="./assets/img/city/NY.jpg" alt="New York" class="place-img">
-                        <div class="place-body">
-                            <h3 class="place-heading">New York</h3>
-                            <p class="place-time">Fri 27 Nov 2016</p>
-                            <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <button class="btn place-buy js-buy-ticket">Buy Tickets</button>
-                        </div>
-                    </div>
-                
-
-                    <div class="col col-third">
-                        <img src="./assets/img/city/Paris.jpg" alt="Paris" class="place-img">
-                        <div class="place-body">
-                            <h3 class="place-heading">Paris</h3>
-                            <p class="place-time">Sat 28 Nov 2016</p>
-                            <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <button class="btn place-buy js-buy-ticket">Buy Tickets</button>
-                        </div>
-                    </div>
-                    
-
-                    <div class="col col-third">
-                        <img src="./assets/img/city/San.jpg" alt="San Francisco" class="place-img">
-                        <div class="place-body">
-                            <h3 class="place-heading">San Francisco</h3>
-                            <p class="place-time">Sun 29 Nov 2016</p>
-                            <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <button class="btn place-buy js-buy-ticket">Buy Tickets</button>
-                        </div>
-                    
-                    </div>
-                
+          </div>
                
+                
+        </div>
+    
+        <footer class="footer">
+
+            <div class="footer-header">
+                <div class="footer-header__contain grid wide">
+                    
+                    <div class="footer-header__social">
+                        <div class="footer-header__instagram">
+                            
+                            <div class="footer-header__instagram-icon">
+                                <i class="footer-header__instagram-icon-img fab fa-instagram"></i>
+                            </div>
+                            <div class="footer-header__instagram-text--wrap">
+                                <p class="footer-header__instagram-text">@Finali281</p>
+                                <p class="footer-header__instagram-desc">about 3 days ago instagram.com/p/CYzTLujFohy/…</p>
+                                  
+
+                            </div>
+
+                        </div>
+
+                        <div class="footer-header__facebook">
+                            <div class="footer-header__facebook-icon">
+                                <i class="footer-header__facebook-icon-img fab fa-facebook-f"></i>
+                            </div>
+
+                            <div class="footer-header__facebook-icon">
+                                <i class="footer-header__facebook-icon-img fab fa-instagram"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            
             </div>
-                    
 
-        </div>
-        
-        <div id="contact" class="content-sections">
-                    
-                  
-            <h3 class="section-heading">CONTACT</h3>
-            <p class="section-slogen">Fan? Drop a note!</p>
-         
-        <div class="row contact-content">
-            <div class="col col-half contact-info">
-                <p>
-                    <i class="ti-location-pin"></i>Chicago, US</p>
-                    <i class="ti-mobile"></i> Phone: +00 151515</p>
-                    <i class="ti-email"></i> Email: mail@mail.com</p>
-
-
-            </div>
-            <div class="col col-half contact-form">
-                <form action="">
-                    <div class="row">
-                        <div class="col col-half">
-                            <input type="text" name="" placeholder="Name" required id="" class="form-control">
-                        </div>
-
-                        <div class="col col-half">
-                            <input type="text" name="" placeholder="Email" required id="" class="form-control">
-                        </div>
+            <footer class="footer-footer">
+                <div class="footer-footer__contain grid wide">
+                    <div class="footer-footer__copyright">
+                        <span class="footer-footer__copyright-text">@2021.</span>
+                        <span class="footer-footer__copyright-text footer-footer__copyright--fill">Confidence</span>
+                        <span class="footer-footer__copyright-text">All Rights Reserved.</span>
                     </div>
-                    <div class="row mt-8">
-                        <div class="col col-full">
-                            <input type="text" name="" placeholder="Message" required id="" class="form-control">
-                        </div>
+
+                    <div class="footer-footer__print">
+                       <a href="" class="footer-footer__print-link">Hire Me</a>
+                       <a href="" class="footer-footer__print-link">Print My CV</a>
                     </div>
-                    <input class="btn pull-right mt-16" type="submit" value="SEND">
-                </form>
-            </div>
-        </div>
+                </div>
+            </footer>
 
-        </div>
-
-        <div class="map-section">
-            <img src="./assets/img/map.jpg" alt="">
-        </div>
-
-    </div>
-    
-    
-    <div id="footer">
-        <div class="social-list">
-                <a href=""><i class="ti-facebook"></i></a>
-                <a href=""><i class="ti-instagram"></i></a>
-                <a href=""><i class="ti-youtube"></i></a>
-                <a href=""><i class="ti-pinterest"></i></a>
-                <a href=""><i class="ti-twitter"></i></a>
-                <a href=""><i class="ti-linkedin"></i></a>
-        </div>
-        <p class="copyright">Powered by <a href="">w3.css</a> </p>
-
-    </div>
-</div>
-
-
-    <div class="modal js-modal">
-        <div class="modal-container js-model-container">
-            <div class="modal-close js-close-ticket">
-                <i class="close-heading-icon ti-close"></i>
-            </div>
-            <header class="modal-header">
-                <i class="model-heading-icon ti-bag"></i>
-                Tickets
-
-            </header>
-            <div class="model-body">
-                <label for="ticket-quantity" class="model-label">
-                    <i class="ti-shopping-cart"></i>
-                    Tickets, $15 per person
-                </label>
-                <input id="ticket-quantity" type="text" class="model-input" placeholder="How many?">
-
-                <label for="ticket-email" class="model-label">
-                    <i class="ti-user"></i>
-                    Send To
-                </label>
-                <input id="ticket-email" type="text" class="model-input" placeholder="Enter email">
-
-                <button id="buy-ticket">
-                    PAY <i class="ti-check"></i>
-                    
-                </button>
-
-
-            </div>
-
-            <div class="footer-modal">
-                <p class="modal-help">Need <a href="">help?</a></p>
-            </div>
-        </div>
+        </footer>
     </div>
 
-    <script>
-        const buyBtns = document.querySelectorAll('.js-buy-ticket')
-        const modal = document.querySelector('.modal')
-        const modalContainer = document.querySelector('.js-model-container')
-        const modalClose= document.querySelector ('.js-close-ticket')
-        function showBuyTicket(){
-            modal.classList.add('open')
-
-        }
-
-        function hideBuyTicket(){
-            modal.classList.remove('open')
-
-        }
-
-        for (const buyBtn of buyBtns){
-            buyBtn.addEventListener('click', showBuyTicket)
-        }
-
-        modalClose.addEventListener('click', hideBuyTicket)
-
-        modal.addEventListener('click', hideBuyTicket)
-        modalContainer.addEventListener('click', function(event){
-            event.stopPropagation()
-
-        })
-    </script>
+    <script src="./main.js"></script>
 </body>
 </html>
+                         
+                        
