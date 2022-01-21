@@ -322,4 +322,8 @@
     .footer-footer {
         height: 80px;
     }
+
+    .main {
+        min-height: 50vh;
+    }
 }
