@@ -30,19 +30,19 @@ function topFunction() {
 
 // scroll behaviour on iphone
 
-function SmoothVerticalScrolling(e, time, where) {
-  var eTop = e.getBoundingClientRect().top;
-  var eAmt = eTop / 100;
-  var curTime = 0;
-  while (curTime <= time) {
-      window.setTimeout(SVS_B, curTime, eAmt, where);
-      curTime += time / 100;
-  }
-}
+const requestAnimationFrame = window.requestAnimationFrame ||
+          window.mozRequestAnimationFrame ||
+          window.webkitRequestAnimationFrame ||
+          window.msRequestAnimationFrame;
 
-function SVS_B(eAmt, where) {
-  if(where == "center" || where == "")
-      window.scrollBy(0, eAmt / 2);
-  if (where == "top")
-      window.scrollBy(0, eAmt);
-}
+const step = (timestamp) => {
+  window.scrollBy(
+    0,
+    1, // or whatever INTEGER you want (this controls the speed)
+  );
+
+  requestAnimationFrame(step);
+};
+
+
+requestAnimationFrame(step);
