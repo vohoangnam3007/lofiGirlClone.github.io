@@ -30,19 +30,3 @@ function topFunction() {
 
 // scroll behaviour on iphone
 
-const requestAnimationFrame = window.requestAnimationFrame ||
-          window.mozRequestAnimationFrame ||
-          window.webkitRequestAnimationFrame ||
-          window.msRequestAnimationFrame;
-
-const step = (timestamp) => {
-  window.scrollBy(
-    0,
-    1, // or whatever INTEGER you want (this controls the speed)
-  );
-
-  requestAnimationFrame(step);
-};
-
-
-requestAnimationFrame(step);
