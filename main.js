@@ -30,11 +30,28 @@ function topFunction() {
 
 // scroll behaviour on iphone
 
-function findScrollableParent(el) {
-  while (el !== d.body && isScrollable(el) === false) {
-    el = el.parentNode;
-    el = el.parentNode || el.host;
-  }
 
-  return el;
+
+
+/*
+ * In this example we will only customize the document's scrolling,
+ * but the API fully support every custom scrollable container
+ */
+function init() {
+  
+  uss.setPageScroller(window); 
+
+  
+  uss.hrefSetup();  
+  
+  
+  
+  
+   uss.setStepLengthCalculator(EASE_IN_OUT_QUART(1000)); 
+   
+  
+    window.addEventListener(
+          "wheel", 
+          () => uss.stopScrolling() 
+    ); 
 }
