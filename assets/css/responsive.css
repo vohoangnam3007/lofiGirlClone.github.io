@@ -110,7 +110,7 @@
     }
 
     .header-desc {
-        bottom: 600px;
+        bottom: 400px;
         left: 0;
     }
 
@@ -327,3 +327,255 @@
         min-height: 50vh;
     }
 }
+
+/* iphone 5 */
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+    .about-me__main-skills {
+        margin: 60px 0;
+        
+    }
+
+    .about-me__main-skills .col {
+        margin-bottom: 40px;
+    }
+ 
+   
+
+    .header-nav__list {
+      
+        height: 25vh;
+    }
+       
+
+    .header-nav__items {
+        text-align: center;
+        
+       
+        
+    }
+    .header {
+        height: 40vh;
+    }
+
+    .header-desc {
+        bottom: 450px;
+        left: 0;
+    }
+
+     @keyframes slide {
+        100%{
+            top: -90px;
+        }
+    } 
+
+    .header-desc__items span {
+        font-size: 2rem;
+    }
+
+    .header-desc__list {
+        height: 30px;
+        line-height: 30px;
+    }
+
+    .header-icon {
+        display: flex;
+        height: 66px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header-nav-icon__mobile {
+        color: var(--white-color);
+        font-size: 2rem;
+    }
+
+    .container-desc__box {
+        height: 206px;
+    }
+
+    .container-desc__top-icon {
+        font-size: 4rem;
+    }
+
+    .container-desc__top-slash {
+        font-size: 4rem;
+        padding: 0 10px;
+    }
+
+    .container-desc__top-text {
+        font-size: 4rem;
+    }
+
+
+    .container-desc__bottom-text {
+        font-size: 2.5rem;
+        
+    }
+
+
+    .about-me__info-name {
+        
+    }
+
+    
+    .profile-social::before {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 1px;
+        background-color: #dcdcdc;
+        right: 36px;
+        top: 60px;
+        display: none;
+    }
+    
+    .profile-social::after {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 1px;
+        background-color: #dcdcdc;
+        left: 36px;
+        top: 60px;
+        display: none;
+    }
+
+    .separate::before {
+        content: "";
+        position: absolute;
+        width: 150px;
+        height: 100%;
+        border-top: 1px dashed #dcdcdc;
+        left: -170px;
+        top: 6px;
+    }
+    
+    .separate::after {
+        content: "";
+        position: absolute;
+        width: 150px;
+        height: 100%;
+        border-top: 1px dashed #dcdcdc;
+        right: -150px;
+        top: 6px;
+    }
+
+    .profile-social__link::before {
+        display: none;
+    }
+
+   .separate-icon {
+       margin-right: 20px;
+   }
+
+   .main-skills__desc {
+       margin-left: 0;
+       width: 370px;
+   }
+
+
+    /* OPEN CLOSE */
+
+    .open {
+        display: block;
+    }
+
+    .close {
+        display: none;
+    }
+
+    .contact-box {
+      width: 300px;
+      min-height: 620px;
+    }
+
+    .contact-address__icon {
+        margin-left: -31px;
+    }
+    
+    .contact-address__contain {
+        padding: 40px 40px;
+        line-height: 3.5rem;
+    }
+
+    .contact-info__list {
+        flex-direction: column;
+    }
+
+    .contact-item__items {
+        flex-direction: column-reverse;
+    }
+    
+
+    .contact-item__items-desc {
+        padding-bottom: 20px;
+    }
+
+    .education-contain__icon {
+        margin-right: 10px;
+    }
+
+    .education {
+        width: 375px;
+    }
+
+    .col--margin {
+        margin-left: 4px;
+    }
+
+    .contact-submit {
+        position: absolute;
+        background-color: var(--text-color);
+        color: var(--white-color);
+        cursor: pointer;
+        height: 61px;
+        font-size: 1.3rem;
+        padding: 0;
+        
+        width: 150px;
+        border: 15px solid #FFFFFF;
+        bottom: -28px;
+        right: 34px;
+        font-weight: 600;
+    }
+
+    .contact-input__box {
+        width: 375px;
+    }
+    
+
+    .footer-header__social {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .footer-header__contain.grid.wide {
+
+        padding: 0;
+       
+    }
+
+    .footer-header {
+        height: 260px;
+    }
+
+    .footer-footer__contain.grid.wide {
+        flex-direction: column;
+        padding: 0 50px;
+        justify-content: space-between;
+        height: 40px;
+    }
+
+    .footer-footer {
+        height: 80px;
+    }
+
+    .main {
+        min-height: 50vh;
+    }
+    }
+    
+
+
